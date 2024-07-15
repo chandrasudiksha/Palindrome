@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task2</title>
+</head>
+<body>
+    <script>
+        function reverseString(str) {
+            var arr = str.split('');
+            arr.reverse();
+            return arr.join('');
+            }
+            function palin(str)
+            {
+                var reversed = reverseString(str);
+                if(reversed===str)
+                document.write(str+" - Palindrome<br>");
+            else
+                document.write(str+" - Not Palindrome<br>");
+            }
+            palin("Hello");
+            palin("MOM");
+            
+            
+    </script>
+</body>
+</html>
